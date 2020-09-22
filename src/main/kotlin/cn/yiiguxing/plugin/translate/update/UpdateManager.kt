@@ -103,7 +103,7 @@ class UpdateManager : BaseStartupActivity(), DumbAware {
     private fun showUpdateNotification(project: Project, plugin: IdeaPluginDescriptor) {
         val version = plugin.version
         val displayId = "${plugin.name} Plugin Update"
-        val title = "${plugin.name} plugin updated to v$version"
+        val title = message("plugin.name.updated.to.version.notification.title", plugin.name, version)
         val color = getBorderColor()
         val partStyle = "margin: ${JBUI.scale(8)}px 0;"
         val refStyle = "padding: ${JBUI.scale(3)}px ${JBUI.scale(6)}px; border-left: ${JBUI.scale(3)}px solid #$color;"
