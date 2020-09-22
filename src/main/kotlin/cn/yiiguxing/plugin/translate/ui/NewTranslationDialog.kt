@@ -214,7 +214,7 @@ class NewTranslationDialog(
 
         clearButton.apply {
             isEnabled = false
-            toolTipText = "Clear Text"
+            toolTipText = message("clear.text.tooltip")
             setListener({ _, _ ->
                 inputTextArea.text = ""
                 translationTextArea.text = ""
@@ -222,7 +222,7 @@ class NewTranslationDialog(
         }
         copyButton.apply {
             isEnabled = false
-            toolTipText = "Copy Text"
+            toolTipText = message("copy.text.tooltip")
             setListener({ _, _ ->
                 val textToCopy = translationTextArea
                     .selectedText
