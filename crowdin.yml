@@ -1,0 +1,6 @@
+files:
+  - source: /src/main/resources/messages/
+    ignore:
+      - /src/main/resources/messages/*_
+    translation: >-
+      /src/main/resources/messages/%file_name%_%two_letters_code%.%file_extension%
