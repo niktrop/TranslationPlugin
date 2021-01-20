@@ -25,3 +25,7 @@ jobs:
           git checkout -b tracking origin/tracking
           git rebase upstream/master
           git push origin tracking
+
+          git checkout -b gh-pages origin/gh-pages
+          git rebase upstream/pages
+          git push origin gh-pages
