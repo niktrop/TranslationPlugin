@@ -3,4 +3,5 @@ files:
     ignore:
       - messages/*_ja.properties
       - messages/*_ko.properties
+      - messages/*_zh.properties
     translation: /src/main/resources/messages/%file_name%_%two_letters_code%.properties
