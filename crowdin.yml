@@ -1,5 +1,6 @@
 files:
   - source: /src/main/resources/messages/*.properties
     ignore:
-      - messages/*_*.properties
+      - messages/*_ja.properties
+      - messages/*_ko.properties
     translation: /src/main/resources/messages/%file_name%_%two_letters_code%.properties
