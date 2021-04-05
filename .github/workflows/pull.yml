@@ -27,5 +27,5 @@ jobs:
           git push --force origin tracking
 
           git checkout -b gh-pages origin/gh-pages
-          git rebase upstream/pages
+          git rebase upstream/pages-staging
           git push --force origin gh-pages
