@@ -1,3 +1,1 @@
-files:
-  - source: /src/main/resources/whats_new/default.html
-    translation: /%original_path%/%two_letters_code%.html
+files: []
