@@ -7,7 +7,7 @@
     <meta name="description" content="IntelliJ ベースのIDE/Android Studio 翻訳プラグインは、多言語翻訳、ドキュメントの翻訳、音声読み上げをサポートしています。">
     <meta name="keywords" content="IDEA プラグイン、IDEA 翻訳プラグイン、プラグイン">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css?v1.1" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css?v1.3" media="screen">
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body class="main-background">
@@ -29,21 +29,17 @@
     <a href="start.html" class="btn" ondragstart="return false;">はじめに</a>
     <a href="support.html" class="btn" ondragstart="return false;">♥ サポート/寄付 ♥</a>
 
-    <!--Current version prefix extracted from script to be translatable -->
-    <div id="currentVersion" class="project-version">現在のバージョン：</div>
-    <script>
-        $.getJSON("https://api.github.com/repos/YiiGuxing/TranslationPlugin/releases/latest", function (data) {
-            var version = data ? data["tag_name"] : null;
-            if (version) {
-                $("#currentVersion").html(function (index, prefix) {
-                    return prefix + "<a href='https://github.com/YiiGuxing/TranslationPlugin/releases/latest'" +
-                    " target='_blank'>" + version + "</a>"
-                })
-            } else {
-                document.getElementById("version").style.visibility="hidden";
-            }
-        });
-    </script>
+    <div class="project-version">
+        <a href="https://github.com/YiiGuxing/TranslationPlugin/releases/latest" target="_blank">
+            <img alt="最新版本" src="https://img.shields.io/github/v/release/YiiGuxing/TranslationPlugin.svg?style=flat-square&color=007AC1&label=%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC">
+        </a>
+        <a href="https://github.com/YiiGuxing/TranslationPlugin" target="_blank">
+            <img alt="收藏" src="https://img.shields.io/github/stars/YiiGuxing/TranslationPlugin?logo=github&style=flat-square&color=009688&label=%E6%94%B6%E8%97%8F">
+        </a>
+        <a href="https://plugins.jetbrains.com/plugin/8579-translation" target="_blank">
+            <img alt="下载" src="https://img.shields.io/jetbrains/plugin/d/8579?style=flat-square&label=%E4%B8%8B%E8%BD%BD">
+        </a>
+    </div>
 
     <div id="embeddable" style="display: flex;justify-content: center"></div>
 
@@ -66,7 +62,7 @@
         </a>
     </div>
 
-    <div class="developer" style="text-decoration: none">開発元</div>
+    <div class="developer"><span>开发者</span></div>
     <div class="developer-item"><a href="https://github.com/YiiGuxing">Yii.Guxing</a></div>
 </div>
 <script src="https://plugins.jetbrains.com/assets/scripts/mp-widget.js"></script>
