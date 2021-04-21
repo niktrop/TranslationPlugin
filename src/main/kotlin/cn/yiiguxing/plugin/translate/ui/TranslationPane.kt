@@ -608,7 +608,7 @@ abstract class TranslationPane<T : JComponent>(
             return if (favoriteId == null) {
                 message("tooltip.addToWordBook")
             } else {
-                message("tooltip.removeFormWordBook")
+                message("tooltip.removeFromWordBook")
             }
         }
     }
